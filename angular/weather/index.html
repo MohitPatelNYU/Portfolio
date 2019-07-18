@@ -1,0 +1,54 @@
+<!doctype HTML>
+<html ng-app="counter">
+
+<head>
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <!--google places library-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAY9OZoRazT6uhVFCG0VBwHGuLqLjD9uas&libraries=places"></script>
+    <!--third party module for using google places library-->
+    <script src="vsGoogle.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="theme.css ">
+    <script src="https://use.edgefonts.net/maiden-orange.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div ng-controller="Weather" class="weather {{state}}">
+        <div class="std-container weather-container">
+            <div class="search-box">
+                <input vs-google-autocomplete ng-model="address" name="address" type="text" vs-latitude="latitude" vs-longitude="longitude" placeholder="Enter a Place">
+                <button ng-click="getWeather(latitude, longitude)">Get Weather Details</button>
+            </div>
+            <h1> Weather in {{response.name}}, {{response.sys.country}} </h1>
+            <h2>
+                {{response.main.temp}} °C
+            </h2>
+            <span>{{date | date: 'medium'}}</span>
+            <div class="weather-des">
+                <p> {{response.weather[0].description}} </p>
+                <img src="{{img_src}}" alt="weather-logo">
+            </div>
+            <h3>
+                Details
+            </h3>
+            <table>
+                <tr>
+                    <td>Feels Like</td>
+                    <td>{{response.main.temp}} °C</td>
+                </tr>
+                <tr>
+                    <td>Wind</td>
+                    <td>{{response.wind.speed}} m/s</td>
+                </tr>
+                <tr>
+                    <td>Humidity</td>
+                    <td>{{response.main.humidity}} %</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>

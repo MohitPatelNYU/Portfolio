@@ -1,0 +1,92 @@
+.login-container {
+    display: flex;
+    border: 2px solid cadetblue;
+    box-shadow: 2px 1px 11px cadetblue;
+    height: 80vh;
+    margin-top: 5%;
+    justify-content: center;
+    align-items: center;
+    background: aliceblue;
+}
+
+.login-item {
+    width: 100%;
+}
+
+.main-nav {
+    background: cornflowerblue;
+}
+
+.main-nav a {
+    color: white;
+}
+
+.main-nav a:hover {
+    color: black;
+}
+
+.post-action {
+    display: flex;
+}
+
+#home-list {
+    width: 100%;
+}
+
+.post-action div {
+    margin-right: 3%;
+}
+
+.content {
+    font-size: large;
+}
+
+.comment-content {
+    font-size: large;
+}
+
+.nested-comment-content {
+    font-size: initial;
+}
+
+.main-item {
+    margin-bottom: 4%;
+    background: aliceblue;
+}
+
+.home-row {
+    margin-top: 8%;
+}
+
+li {
+    list-style: none;
+}
+
+.main-comment {
+    background: blanchedalmond;
+}
+
+.main-nested-comment {
+    background: ivory;
+}
+
+textarea.form-control.custom-control::placeholder {
+    font-size: large;
+    font-weight: bolder;
+    color: black;
+}
+
+.nested-comment-form {
+    margin-top: 10px;
+    padding-left: 40px;
+}
+
+.user {
+    font-size: x-large;
+    text-transform: capitalize;
+}
+
+img.thumb {
+    width: 100px;
+    height: 100px;
+}
