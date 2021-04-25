@@ -59,7 +59,7 @@ body.show-menu #left-nav{left:0;top:0;z-index:99;}
 .menu-bottom-click{-webkit-backface-visibility:hidden;backface-visibility:hidden;top:15px;-webkit-transform:rotate(-410deg);-ms-transform:rotate(-410deg);transform:rotate(-410deg);-webkit-transition:0.25s 0.2s;transition:0.25s 0.2s;}
 .close-menu{left:205px;width:30px;top:10px;opacity:.8}
 .close-menu:hover{opacity:1;}
-#about{background:url(../images/2.jpg) no-repeat fixed center center/cover;overflow:hidden;}
+#about{background:url(../images/portfolio_background.jpg) no-repeat fixed center center/cover;overflow:hidden;}
 #about a, #about a:visited{color:#fff;}
 #about a:hover, #about a:focus{color:#11ABB0;}
 #about h1{color:#fff;border-color:#dedede;margin-bottom:60px;width:400px;}
